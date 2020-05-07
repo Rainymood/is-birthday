@@ -12,6 +12,7 @@
     "birthdate",
     "birth"
   ],
+  "repository": "rainymood/is-birthday",
   "author": "Jan Meppe",
   "license": "MIT",
   "dependencies": {
