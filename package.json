@@ -1,6 +1,6 @@
 {
   "name": "is-birthday",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Checks if current date is a birthday",
   "main": "index.js",
   "scripts": {
