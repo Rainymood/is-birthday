@@ -19,7 +19,7 @@ const isBirthday = require('is-birthday');
 isBirthday("1999-05-07") // => true
 isBirthday("1999-02-06") // => false
 
-// Can evaluate differ
+// Set a different "today"
 const options = {today: new Date("2020-05-06")}
 isBirthday("1999-05-06",  options) // => true
 ```
@@ -32,9 +32,10 @@ Returns `true` or `false` depending on whether it is a birthday given a birthdat
 
 #### birthdate
 
-Type: `object`
+Type: `string`
 
-String to work on.
+Date, as a string, to check whether it's a birthday or not. Gets converted to
+a `Date` object.
 
 #### options
 
@@ -42,7 +43,7 @@ Type: `object`
 
 ##### today
 
-Type: `object`<br>
+Type: `Date`<br>
 Default: `new Date()`
 
 Date to compare birthdate with. 
